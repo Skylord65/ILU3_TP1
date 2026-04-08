@@ -6,9 +6,9 @@ public enum Type {
 	ESSENCE("Panne d'essence", "Essence", "Citerne d'essence"),
 	ACCIDENT("Accident", "Réparation", "As du volant");
 	
-	private String attaque;
-	private String parade;
-	private String botte;
+	private final String attaque;
+	private final String parade;
+	private final String botte;
 	
 	Type(String attaque, String parade, String botte) {
 		this.attaque = attaque;
