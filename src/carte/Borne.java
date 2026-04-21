@@ -5,10 +5,10 @@ public class Borne extends Carte {
 	private int km;
 	
 	public Borne(int km) {
-		km = this.km; 
+		this.km = km; 
 	}
 	
 	public String toString() {
-		return "Carte " + km + " bornes";
+		return km + "KM";
 	}
 }
