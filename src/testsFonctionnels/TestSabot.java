@@ -44,7 +44,7 @@ public class TestSabot {
 			Carte newCarte = iterator.next();
 			System.out.println("Je pioche " + newCarte);
 			iterator.remove();
-			cartePiochee = sabot.piocher();
+			//cartePiochee = sabot.piocher();
 			sabot.ajouterCarte(new Botte(carte.Type.ACCIDENT));
 		}
 		Iterator<Carte> iterator = sabot.iterator();
@@ -53,8 +53,8 @@ public class TestSabot {
 
 	public static void main(String[] args) {
 		TestSabot testPioche = new TestSabot();
-		testPioche.questionA();
-		testPioche.questionB();
+		//testPioche.questionA();
+		//testPioche.questionB();
 		testPioche.questionC();
 	}
 
