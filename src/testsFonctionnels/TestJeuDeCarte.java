@@ -7,6 +7,6 @@ public class TestJeuDeCarte {
 		JeuDeCartes jeu = new JeuDeCartes();
 		System.out.println("JEU:\n" + jeu.affichageJeuDeCarte());
 		
-		//System.out.println("Test checkCount : " + jeu.checkCount());
+		System.out.println("Test checkCount : " + jeu.checkCount());
 	}
 }

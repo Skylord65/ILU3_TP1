@@ -42,6 +42,23 @@ public class JeuDeCartes {
 		return jeuComplet;
 	}
 
+	public boolean checkCount() {
+		Carte[] jeu = donnerCartes();
+		
+		int compteur;
+		for (int i = 0; i < typesDeCartes.length; i++) {
+			compteur = 0;
+			for (int j = 0; j < jeu.length; j++) {
+				if (typesDeCartes[i].getCarte().toString().equals(jeu[j].toString())) {
+					compteur++;
+				}
+			}
+			if(typesDeCartes[i].getNbExemplaire() != compteur) {
+				return false;
+			}
+		}
+		return true;
+	}
 	
 	public String affichageJeuDeCarte() {
 		StringBuilder chaine = new StringBuilder();
